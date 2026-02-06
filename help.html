@@ -44,8 +44,21 @@
 
             <div class="card" style="background: white; border: 1px solid var(--md-sys-color-outline);">
                 <h2>Website</h2>
-                <h3>Where to find the archived website?</h3>
-                <p><a href="https://web.archive.org">Wayback Machine</a>! You can explore the old and new websites on your Wayback Machine (web.archive.org).</p>
+                <md-filled-button
+                    @click=${showDialog}
+                    aria-label="Open a confirmation dialog">
+                      Where to find the archived website?</h3>
+                 <md-dialog>
+                  <div slot="headline">
+                    duckdroid.com/help says:
+                  </div>
+                  <form slot="content" id="form-id" method="dialog">
+                    <a href="https://web.archive.org">Wayback Machine</a>! You can explore the old and new websites on your Wayback Machine from Internet Archive.
+                  </form>
+                  <div slot="actions">
+                  <md-text-button form="form-id">Ok</md-text-button>
+                  </div>
+                </md-dialog>
                 <h3>Where to visit website repository?</h3>
                 <p>Yes! You can view repository of website in GitHub. For viewing or managing the repository, see <a href="https://github.com/DuckdroidGit/duckdroid-dot-com/">Duckdroid's Website Repository.</p>
                 <h2>Applications</h2>
