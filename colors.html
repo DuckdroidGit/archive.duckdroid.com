@@ -20,6 +20,11 @@
     
     <script type="module" src="https://esm.run/@material/web/all.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .cpalette-grid {
+            display="grid;
+        }
+    </style>
     
 </head>
 <body>
@@ -46,11 +51,19 @@
             <div class="card" style="background: white; border: 1px solid var(--md-sys-color-outline);">
                 <h2>Material Design 1</h2>
                 <div class="cpalette-grid">
+                    <div>
                     <svg width="1000" height="1200">
                         <rect width="200" height="150"
-                         style="background-color: #F44336;" />
-                        <text fill="#FFFFFF" x="10" y="10">#F44336;</text>
+                         style="fill: #F44336;" />
+                        <text fill="#FFFFFF" x="60" y="60">Red | 500 | #F44336</text>
+                        <rect width="200" height="90"
+                         style="fill: #FFEBEE;" />
+                        <text fill="#FFFFFF" x="60" y="60">Red | 50 | #F44336;</text>
                     </svg>
+                    </div>
+                    <div>
+                        
+                    </div>
             </div>
             <div class="card" style="background: white; border: 1px solid var(--md-sys-color-outline);">
                 <h2>Colors</h2>
